@@ -13,11 +13,11 @@ header {
     background-position: center;
     padding: 60px 0; /* Adjust as needed for padding */
     text-align: center;
-    color: black; /* Ensure the text is readable */
+    color: #3f7e8f; /* Ensure the text is readable */
 }
 
 header .container {
-    background: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for better text contrast */
+    background: rgba(255, 250, 231, 0.5); /* Optional: adds a dark overlay for better text contrast */
     padding: 20px;
     border-radius: 10px;
 }
