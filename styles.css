@@ -13,7 +13,13 @@ header {
     background-position: center;
     padding: 60px 0; /* Adjust as needed for padding */
     text-align: center;
-    color: black; /* Ensure the text is readable */
+    color: white; /* Ensure the text is readable */
+}
+
+header .container {
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for better text contrast */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 header h1 {
