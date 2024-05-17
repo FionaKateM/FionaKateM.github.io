@@ -13,7 +13,7 @@ header {
     background-position: center;
     padding: 60px 0; /* Adjust as needed for padding */
     text-align: center;
-    color: white; /* Ensure the text is readable */
+    color: black; /* Ensure the text is readable */
 }
 
 header .container {
