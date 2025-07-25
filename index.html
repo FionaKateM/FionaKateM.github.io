@@ -3,142 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiona Kate | AI Product Strategist for your business</title>
-    <meta name="description" content="Feeling lost with AI? Fiona Kate, an AI product strategist, offers jargon-free guidance for SMEs to leverage AI effectively & enhance your unique business value.">
+    <title>Fiona Kate Morgan | AI Strategy for Independent Financial Advisors</title>
     <style>
+        /* --- Basic Setup & Typography --- */
+        :root {
+            --primary-color: #003366; /* Deep professional blue */
+            --secondary-color: #007A7A; /* Teal for accents */
+            --text-color: #333333;
+            --bg-color: #FFFFFF;
+            --light-gray-bg: #f7f9fa;
+        }
+
         body {
-            font-family: Arial, sans-serif; /* Or a cleaner sans-serif like 'Segoe UI', 'Helvetica Neue', sans-serif */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
-            color: #333;
-            margin: 0 auto; /* Center content */
-            max-width: 900px; /* Limit width for readability */
+        }
+
+        /* --- Layout Containers --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9; /* Light background */
         }
-        h1, h2, h3 {
-            color: #333; /* Darker headings */
-            text-align: center; /* Center main headings */
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-        h1 {
-            font-size: 2.2em;
-            color: #e4035d; /* Emphasis color like the original */
-            margin-top: 1em;
-        }
-        h2 {
-            font-size: 1.8em;
-            border-bottom: 1px solid #eee; /* Subtle separator */
-            padding-bottom: 5px;
-            margin-top: 2em;
-        }
-        p, li {
-            font-size: 1.1em;
-            margin-bottom: 1em;
-            text-align: left; /* Standard text alignment */
-        }
-        ul {
-            list-style-position: inside;
-            padding-left: 0; /* Align bullets better */
-        }
-        .subtitle {
+
+        /* --- Header --- */
+        header {
+            padding: 2rem 0;
             text-align: center;
-            font-size: 1.2em;
-            color: #555;
-            margin-top: -0.5em;
-            margin-bottom: 2em;
+            border-bottom: 1px solid #e0e0e0;
         }
-        .emphasis-color {
-            color: #e4035d; /* Emphasis color */
-            font-weight: bold;
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin: 0;
         }
-        .section {
-            margin-bottom: 2.5em;
-            padding: 1em;
-            background-color: #fff; /* White background for sections */
-            border-radius: 5px; /* Slightly rounded corners */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            font-weight: 300;
         }
-        .cta-section {
-            background-color: #f0f0f0; /* Slightly different background for CTA */
+        
+        /* --- Hero Section --- */
+        .hero {
             text-align: center;
-            padding: 2em 1em;
+            padding: 4rem 1rem;
         }
-        .cta-section p {
-            text-align: center;
+
+        .hero h2 {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
         }
-        a {
-            color: #0073e6;
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* --- Call to Action Button --- */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
             text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
             font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .cta-button:hover {
+            background-color: #005f5f;
+            transform: translateY(-2px);
         }
-        strong em, em strong { /* Style emphasized words */
-             font-style: normal; /* Avoid italics if already bold */
-             font-weight: bold;
+
+        /* --- Challenges Section (Why get in touch) --- */
+        .challenges {
+            background-color: var(--light-gray-bg);
+            padding: 3rem 1rem;
+        }
+
+        .challenges h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .challenges-list {
+            list-style: none;
+            padding: 0;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .challenges-list li {
+            background-color: #fff;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* --- Opportunity Section (FCA Update) --- */
+        .opportunity {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .opportunity h3 {
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .opportunity p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        /* --- Contact Section --- */
+        .contact {
+            text-align: center;
+            padding: 3rem 1rem 4rem 1rem;
+        }
+
+        .contact h3 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-email {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .contact-email:hover {
+            background-color: var(--light-gray-bg);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .challenges h3, .contact h3 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="section">
-        <h1>Feeling lost with AI?<br> Let's find where it fits your business.</h1>
-        <p class="subtitle">AI strategy & implementation for small & medium businesses – without the tech jargon.</p>
-        <p>You know your business inside out, but navigating the world of Artificial Intelligence feels overwhelming. You hear the buzz, but you're not sure how, or even <em>if</em>, AI can genuinely help <strong>your</strong> company without losing the unique spark that makes you successful.</p>
+    <header class="container">
+        <h1>Fiona Kate Morgan</h1>
+        <p class="subtitle">AI Strategist & Engineer for Independent Financial Advisors</p>
     </header>
 
-    <section class="section">
-        <h2>Worried AI isn't right for you?</h2>
-        <p>Does any of this sound familiar?</p>
-        <ul>
-            <li><strong>Fear of losing your touch:</strong> "Will AI dilute or erase what makes my business special?"</li>
-            <li><strong>Trust issues:</strong> "How can I trust an 'expert' not to oversell AI just to get my business, especially when I don't understand the tech?"</li>
-            <li><strong>Feeling behind:</strong> "Is it too late? Has everyone else already figured AI out?"</li>
-            <li><strong>Complexity concerns:</strong> "I don't really get AI – how can I make informed decisions?"</li>
-        </ul>
-        <p>Choosing the wrong path with AI, or the wrong guide, can waste time and money. But ignoring it might mean missing valuable opportunities to <strong>enhance</strong> what you already do brilliantly.</p>
-    </section>
-
-    <section class="section">
-        <h2>My Approach: Putting your business first</h2>
-        <p>You need someone who listens first and understands <em>your</em> specific goals and challenges. That's where I come in.</p>
-        <ul>
-            <li><strong>I start by understanding:</strong> We'll talk about your business, your pain points, and what success looks like <em>for you</em>.</li>
-            <li><strong>Focus on <em>enhancing</em>, not replacing:</strong> My goal is to find where AI can boost your existing strengths and processes.</li>
-            <li><strong>Clear, jargon-free communication:</strong> I explain the opportunities and the technology in plain English, so you feel confident and informed.</li>
-            <li><strong>No hard sell, no BS:</strong> If AI isn't the right fit for a particular problem, I'll tell you. My priority is finding solutions that genuinely benefit <strong>your</strong> business. And if I'm not the right person to help, I'll suggest someone who is.</li>
-            <li><strong>Flexible, milestone-based plans:</strong> AI often involves experimentation. We'll work in stages, and you'll have the option to pause or stop at any milestone – no pressure.</li>
-            <li><strong>Results-driven:</strong> I define success based on <em>your</em> business metrics and what's important to you.</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Experience you can trust</h2>
-        <p>I've designed and implemented effective AI solutions at multiple businesses, ranging from major corporations (like the <strong>BBC</strong> and <strong>NatWest Group</strong>) to innovative startups (like <strong>Voice Arcade</strong>, <strong>labworks.io</strong>, and <strong>Worktripp</strong>). I bring practical experience working directly with experts from leading AI companies (like <strong>Google</strong>, <strong>OpenAI</strong>, <strong>IBM</strong>, and <strong>Amazon</strong>) and translate that into real-world applications for businesses like yours.</p>
-
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Navigate the Future of Financial Advice with AI</h2>
+                <p>Helping IFAs leverage Artificial Intelligence to enhance efficiency, ensure compliance, and deliver superior client value.</p>
+                <a href="#contact" class="cta-button">Start the Conversation</a>
+            </div>
+        </section>
+        
+        <section class="challenges">
+            <div class="container">
+                <h3>Does this sound familiar?</h3>
+                <ul class="challenges-list">
+                    <li>"I feel like I can’t get involved in AI because I don’t understand enough about it."</li>
+                    <li>"I don’t have the time to learn and implement complex AI tools."</li>
+                    <li>"I’m not sure where AI can actually be of benefit to my practice."</li>
+                    <li>"I’m worried about the implications of AI with FCA regulation."</li>
+                    <li>"I’m concerned that my clients won’t trust AI with their data for privacy reasons."</li>
+                </ul>
+            </div>
         </section>
 
-    <section class="section">
-        <h2>About Fiona: Your practical AI partner</h2>
-        <p>I'm Fiona Kate Morgan, an AI product strategist with a Master's degree in AI and nearly a decade of hands-on experience. I specialise in making cutting-edge AI accessible and beneficial, particularly for businesses focused on content or enhancing customer experiences. My passion lies in finding practical ways AI can help you achieve your goals, not just implementing tech for tech's sake.</p>
-    </section>
-
-    <section class="section cta-section">
-        <h2>Ready to explore how AI can <em class="emphasis-color">enhance</em> your business (without the hype)?</h2>
-        <p>Contrary to popular belief, you're likely not "behind" on AI. Often, even small, targeted AI implementations can make a significant difference to your efficiency, customer satisfaction, or bottom line.</p>
-        <p>Let's have a straightforward, no-obligation conversation to see if and how AI could be a good fit for your specific needs.</p>
-        <p style="font-size: 1.2em; margin-top: 1.5em;"><strong>Find out if AI can help enhance what you do.</strong></p>
-        <p style="font-size: 1.2em;"><strong>Message me today:</strong></p>
-        <p style="font-size: 1.3em; margin-top: 0.5em;">
-            📧 <a href="mailto:hello@fionakate.co.uk">hello@fionakate.co.uk</a>
-        </p>
+        <section class="opportunity">
+            <div class="container">
+                <h3>The Regulatory Landscape is Changing.</h3>
+                <p>The FCA is updating its rules around advice, meaning AI can now be used more freely and effectively in this space. This is your moment to get ahead of the curve.</p>
+            </div>
         </section>
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3>Ready to Future-Proof Your Advisory Practice?</h3>
+                <p>Let's discuss how a tailored AI strategy can address your concerns and unlock new potential. Reach out for a no-obligation initial consultation.</p>
+                <a href="mailto:hello@fionakate.co.uk" class="contact-email">hello@fionakate.co.uk</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            &copy; 2025 Fiona Kate Morgan | fionakate.co.uk
+        </div>
+    </footer>
 
-    <footer style="text-align: center; margin-top: 2em; font-size: 0.9em; color: #777;">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> Fiona Kate. All rights reserved.</p>
-        </footer>
+    <script>
+        // Smooth scroll for the "Start the Conversation" button
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
